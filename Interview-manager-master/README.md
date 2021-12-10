@@ -1,10 +1,6 @@
 # interview-management-backend
 interview-management-backend
 
-## Installation
- - `git clone https://github.com/vishaldhull09/Interview-manager`
- - `npm i`
- - `nodemon`
 
 ## List of APIs
 | API Endpoint | Method | Description | Body |
