@@ -2,7 +2,7 @@ const InterviewModel = require("../models/interview").InterviewModel;
 const UserModel = require("../models/users").UserModel;
 const mail = require("../utils/mailService").mail;
 
-async function addUser(req, res, next) {
+async function addUser(req, res, next) {  // api to add user
     try {
         const user = req.body;
         const userAlreadyExist = await UserModel.findOne(user);
@@ -22,7 +22,7 @@ async function addUser(req, res, next) {
     }
 }
 
-async function getUser(req, res, next) {
+async function getUser(req, res, next) {  // api to get user
     try {
         const userId = req.params.id;
         const response = await UserModel.findOne({ _id: userId });
@@ -34,7 +34,7 @@ async function getUser(req, res, next) {
     }
 }
 
-async function getAllUsers(req, res, next) {
+async function getAllUsers(req, res, next) { // api to get all users
     try {
         const response = await UserModel.find({});
         res.status(200).send({ success: true, msg: response });
@@ -45,7 +45,7 @@ async function getAllUsers(req, res, next) {
     }
 }
 
-async function getAllInterviews(req, res, next) {
+async function getAllInterviews(req, res, next) {  //api to get all interviews
     try {
         const interviews = await InterviewModel.find();
         res.status(200).send({ success: true, msg: interviews });
@@ -56,7 +56,7 @@ async function getAllInterviews(req, res, next) {
     }
 }
 
-async function scheduleInterview(req, res, next) {
+async function scheduleInterview(req, res, next) {  // api to schedule interview
     try {
         let interviewDetails = req.body;
         if (interviewDetails.participants.length < 2) {
@@ -105,7 +105,7 @@ async function scheduleInterview(req, res, next) {
     }
 }
 
-async function updateInterview(req, res, next) {
+async function updateInterview(req, res, next) {  // api to update interview
     try {
         let interviewDetails = req.body;
         if (interviewDetails.participants.length < 2) {
@@ -153,7 +153,7 @@ async function updateInterview(req, res, next) {
     }
 }
 
-async function deleteInterview(req, res, next) {
+async function deleteInterview(req, res, next) {   // api to delete interview
     try {
         const response = await InterviewModel.deleteOne({ _id: req.body._id });
         res.status(200).json({ success: true, message: response });
