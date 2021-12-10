@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/vishaldhull09/scaler-interview.git
+[submodule "interview-management-backend"]
+	path = interview-management-backend
+	url = https://github.com/vishaldhull09/scaler-interview.git
