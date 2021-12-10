@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netanmangal/interview-management-backend.git"
+    "url": "git+https://github.com/vishaldhull09/Interview-manager.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/netanmangal/interview-management-backend/issues"
+    "url": "https://github.com/vishaldhull09/Interview-manager/issues"
   },
-  "homepage": "https://github.com/netanmangal/interview-management-backend#readme",
+  "homepage": "https://github.com/vishaldhull09/Interview-manager#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "express": "^4.17.1",
