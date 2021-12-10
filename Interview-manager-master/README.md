@@ -2,7 +2,7 @@
 interview-management-backend
 
 ## Installation
- - `git clone https://github.com/netanmangal/interview-management-backend`
+ - `git clone https://github.com/vishaldhull09/Interview-manager`
  - `npm i`
  - `nodemon`
 
